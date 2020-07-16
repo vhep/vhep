@@ -1,0 +1,21 @@
+.main-heading {
+  font-size: $fs-large;
+  font-weight: normal;
+}
+.secondary-heading {
+  font-size: $fs-medium;
+  margin: 1em 0;
+  font-weight: normal;
+}
+.main-p {
+  margin: 1em 0;
+}
+.sub-page-heading {
+  font-size: 5em;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  max-width: 500px;
+  margin: 0.5em auto;
+  font-family: "Caladea", sans-serif;
+}

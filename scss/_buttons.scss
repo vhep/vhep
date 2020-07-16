@@ -1,0 +1,70 @@
+#btn {
+  padding: 0.5em 1.5em;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  display: inline-block;
+  margin: 1em;
+}
+.cta-home,
+.cta-box,
+.cta-slider {
+  @extend #btn;
+  color: #1b98e0;
+  margin-top: 2em;
+  background: white;
+  max-width: 10em;
+  margin: 2em auto;
+  position: relative;
+  text-transform: uppercase;
+  overflow: hidden;
+  &:hover.cta-home::after {
+    transform: translateX(0%);
+  }
+  &:hover.cta-box::after {
+    transform: translateX(0%);
+  }
+  &:hover.cta-slider::after {
+    transform: translateX(0%);
+  }
+}
+.cta-home::after,
+.cta-box::after,
+.cta-slider::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: #1b98e0;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+}
+
+.cta-box {
+  background: black;
+  color: white;
+  margin: 1em 2em;
+  // width: 150px;
+
+  &:hover {
+    color: white;
+  }
+}
+.cta-home:hover {
+  color: black;
+}
+
+.cta-slider {
+  background: black;
+  color: white;
+  margin: 1em auto;
+}
+.cta-here {
+  color: white;
+  display: inline;
+}
