@@ -136,14 +136,14 @@ body {
 /* GENERAL LAYOUT */
 /* NAVIGATION MOBILE */
 header {
-  background: #1b1b1e;
+  background: white;
 }
 
 nav {
   padding: 1em;
   height: 10vh;
-  color: white;
-  background: #1b1b1e;
+  color: black;
+  background: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -158,7 +158,7 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: white;
+  color: black;
   position: relative;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -170,7 +170,7 @@ nav a:hover {
 
 .nav-bar {
   position: fixed;
-  background: #1b1b1e;
+  background: white;
   top: 0;
   left: 0;
   height: 100vh;
@@ -258,7 +258,7 @@ nav a:hover {
 .line2 {
   height: 3px;
   width: 30px;
-  background: white;
+  background: black;
   margin: 6px;
   border-radius: 10%;
   -webkit-transition: all 0.5s ease;
@@ -308,7 +308,7 @@ nav a:hover {
     position: relative;
   }
   .nav-bar li .submenu {
-    background-color: #1b1b1e;
+    background-color: white;
     position: absolute;
     padding: 2em 1em 1em 1em;
     width: 12em;
@@ -378,7 +378,6 @@ nav a:hover {
 
 .hero-top-box {
   background: #2c2727;
-  border: 3px solid white;
   max-width: 700px;
   padding: 1em;
   margin: 0 auto;
@@ -561,10 +560,28 @@ nav a:hover {
 }
 
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   background: #1b1b1e;
   padding: 2em;
   color: white;
   text-align: center;
+}
+
+footer .footer-info {
+  margin-right: 1em;
+}
+
+footer .footer-logo {
+  padding: 1em;
+  background: white;
 }
 
 footer .social-icons {
@@ -573,7 +590,7 @@ footer .social-icons {
 
 footer .social-icons a {
   color: white;
-  margin: 1em;
+  padding: 0.8em;
   font-size: 1.5em;
   display: block;
   -webkit-transition: all 0.5s ease;
@@ -592,6 +609,18 @@ footer .social-icons a:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media (max-width: 620px) {
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -718,6 +747,10 @@ footer .social-icons a:hover {
   text-align: center;
   margin: 1em 0;
   font-size: 3em;
+}
+
+.team-heading1 {
+  color: black;
 }
 
 .team-heading2 {
